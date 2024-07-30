@@ -128,7 +128,7 @@ h1 {
 
 .recipeImgThumbnail {
 	width: 100%;
-	heigh: auto;
+	object-fit: cover;
 }
 
 #recipeInfoContainer {
@@ -143,7 +143,7 @@ h1 {
 #footerText {
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #feadbb;
   text-align: center;
 }
@@ -157,6 +157,14 @@ h1 {
 
 .outfit-regular {
   font-size: 1.5rem;
+}
+
+#introSectionContainer {
+	padding: 10rem 0rem 8rem 0rem;
+}
+
+#introImage {
+	width: 150px;
 }
 
 #contentWrapper {
@@ -175,8 +183,16 @@ h1 {
 	padding: 8rem 0rem;
 }
 
+.recipeBox {
+	grid-row-gap: 1rem;
+}
+
 .recipeImageContainer {
 	aspect-ratio: 1 / 1;
+}
+
+#footerText {
+  font-size: 1rem;
 }
 
 }
