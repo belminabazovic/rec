@@ -43,6 +43,21 @@ button {
   color: #8ba888;
 }
 
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #44624a;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 
 #bodyContainer {
@@ -70,6 +85,11 @@ h1 {
 	z-index: 5;
 }
 
+h2 {
+	text-overflow: ellipsis;
+	font-size: 2rem;
+}
+
 #introImage {
 	position: relative;
 	z-index: 4;
@@ -91,11 +111,20 @@ h1 {
 	width: 100%;
 }
 
+#searchBoxContainer:hover {
+	border: 1px solid #C4C4C4;
+}
+
 #searchBox {
-	width: max-width;
+	width: 100%;
 	outline: none;
 	background: none;
 	border: none;
+	font-size: 2.5rem;
+	font-family: "Lexend", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 	color: #44624a;
 }
 
@@ -113,14 +142,14 @@ h1 {
 .recipeBox {
 	display: grid;
 	grid-template-rows: max-content max-content;
-	grid-row-gap: 2rem;
+	grid-row-gap: 3rem;
 }
 
 .recipeImageContainer {
 	aspect-ratio: 1 / 0.7;
 	overflow: hidden;
-	border-radius: 15px;
-	background-color: grey;
+	border-radius: 25px;
+	background-color: #fedee3;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -131,9 +160,34 @@ h1 {
 	object-fit: cover;
 }
 
-#recipeInfoContainer {
+.recipeInfoContainer {
 	line-height: 1.5rem;
 	min-height: 3rem;
+	display: grid;
+	grid-template-rows: max-content max-content;
+	grid-row-gap: 1.5rem;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+
+.recipeDetailsContainer {
+	width: 100%;
+}
+
+.recipeDetail {
+	font-family: "Lexend", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: 0.9rem;
+	font-style: normal;
+	color: #8ba888;
+}
+
+.dot {
+	height: 5px;
+	width: 5px;
+	border-radius: 10px;
+	color: #8ba888;
 }
 
 #footerContainer {
@@ -159,6 +213,11 @@ h1 {
   font-size: 1.5rem;
 }
 
+h2 {
+	text-overflow: ellipsis;
+	font-size: 1.5rem;
+}
+
 #introSectionContainer {
 	padding: 10rem 0rem 8rem 0rem;
 }
@@ -176,6 +235,10 @@ h1 {
 	width: 70%;
 }
 
+#searchBox {
+	font-size: 1.5rem;
+}
+
 #recipesSectionContainer {
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 2rem;
@@ -189,6 +252,11 @@ h1 {
 
 .recipeImageContainer {
 	aspect-ratio: 1 / 1;
+	border-radius: 15px;
+}
+
+.recipeInfoContainer {
+	grid-row-gap: 0.5rem;
 }
 
 #footerText {
