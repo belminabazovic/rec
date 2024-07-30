@@ -74,27 +74,19 @@ button {
 #introSectionContainer {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 	padding: 15rem 0rem 10rem 0rem;
-}
-
-h1 {
-	position: absolute;
-	z-index: 5;
 }
 
 h2 {
 	text-overflow: ellipsis;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 #introImage {
-	position: relative;
-	z-index: 4;
-	width: 20vw;
-	opacity: 0.8;
+	width: 15vw;
 	height: auto;
 }
 
@@ -109,6 +101,7 @@ h2 {
 	border-radius: 15px;
 	padding: 3rem;
 	width: 100%;
+	background-color: #fee7eb;
 }
 
 #searchBoxContainer:hover {
@@ -178,7 +171,7 @@ h2 {
 	font-family: "Lexend", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	font-style: normal;
 	color: #8ba888;
 }
@@ -223,7 +216,7 @@ h2 {
 }
 
 #introImage {
-	width: 150px;
+	width: 5vw;
 }
 
 #contentWrapper {
@@ -257,6 +250,11 @@ h2 {
 
 .recipeInfoContainer {
 	grid-row-gap: 0.5rem;
+}
+
+.recipeDetail {
+	font-size: 1rem;
+
 }
 
 #footerText {
